@@ -1,7 +1,7 @@
 {
   "name": "scan-for-users",
   "version": "1.0.0",
-  "description": "",
+  "description": "scans github for open {user,org}names",
   "main": "index.js",
   "type": "module",
   "scripts": {

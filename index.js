@@ -1,6 +1,13 @@
 import { Octokit } from "octokit"
 
 const auth = process.env.GH_TOKEN
+
+if (auth == null) {
+  console.log('no auth token provided')
+} else {
+  console.log('attempting to use provided auth token')
+}
+
 console.log(`using github token: ${auth}`)
 const octokit = new Octokit({ auth })
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
